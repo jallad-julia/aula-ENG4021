@@ -1,0 +1,9 @@
+<ul>
+  {% for task in tasks %}
+    <li>
+      {{ task.title }}
+      <a href='/task/edit/{{task.id}}' > Editar</a>]
+      <a href= '/task/delete/{{task.id}}' >Remover</a>
+    </li>
+  {% endfor %}
+</ul>
